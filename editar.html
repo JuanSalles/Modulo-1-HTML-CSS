@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>   
-    
+<body>
+
     <header>
         <nav class="navbar navbar-expand-sm bg-body-tertiary flex-column">
 
@@ -21,10 +21,12 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Digite aqui sua busca!"
                         aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg>
-                </button>
+                    <button class="btn btn-outline-success" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path
+                                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                        </svg>
+                    </button>
                 </form>
             </div>
 
@@ -73,27 +75,47 @@
 
             <div class="mb-3 input_width_medio d-lg-flex">
                 <label for="exampleInputEmail1" class="form-label m-1">Email</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="name@server.com">
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="name@server.com">
             </div>
-            
+
             <div class="mb-3 form-check input_container input_width_menor p-0 d-lg-flex">
                 <label class="form-check-label m-1" for="exampleCheck1">Sexo</label>
                 <select class="form-select text-center" name="exampleCheck1">
-                <option>Masculino</option>
-                <option>Feminino</option>
-                <option>Prefiro não responder</option>
-                <option>Outro</option>
+                    <option>Masculino</option>
+                    <option>Feminino</option>
+                    <option>Prefiro não responder</option>
+                    <option>Outro</option>
                 </select>
             </div>
             <div class="button-container">
                 <a class="btn btn-danger botao-cancelar" href="index.html">Cancelar</a>
-                <button type="submit" class="btn btn-primary">Salvar</button>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Salvar</button>
             </div>
-            
-          </form>
+
+        </form>
 
         <!-- Alerta de salvar -->
-    
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-headerb border-0 d-flex justify-content-between p-2 bg-success">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">SUCESSO</h1>
+                  <a href="index.html"><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></a>
+                </div>
+                <div class="modal-body">
+                    Cliente salvo com sucesso.
+                </div>
+                <div class="modal-footer">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        
+
     </main>
     <footer class="fixed-bottom bg-black">
         <ul class="nav justify-content-center pb-3 mb-3">
